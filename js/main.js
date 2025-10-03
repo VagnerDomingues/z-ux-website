@@ -175,7 +175,7 @@ $portfolioModalNavPrev.on("click", function(a) {
                     var n = $("<a />").attr({
                         href: "#"
                     }).append($("<img/>").attr({
-                        src: "http://i.ytimg.com/vi/" + srcPure + "/maxresdefault.jpg"
+                        src: "https://i.ytimg.com/vi/" + srcPure + "/maxresdefault.jpg"
                     }));
                     k.append(n), k.imagesLoaded(function() {
                         e.append(k), openPortfolioModal()
