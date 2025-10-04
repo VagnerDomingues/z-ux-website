@@ -134,7 +134,7 @@
                 </div>                
                     <div class="timeline-content">
                         <div>
-                            <p>Vault for API keys, secrets and environment variables inside Unity—team sharing without ever committing raw values. Injects at build / runtime through secure bridges so nothing sensitive ships in game binaries, mitigating reverse‑engineering & accidental leak risk.</p>
+                            <p>Safe vault for API keys, secrets and environment variables inside Unity—team sharing without ever committing raw values. The .env is excluded from build & runtime it only runs on editor so nothing sensitive ships in game binaries, mitigating reverse‑engineering & accidental leak risk.</p>
                         </div>
                     </div>
                 </div>            
@@ -147,8 +147,7 @@
                 </div>                  
                     <div class="timeline-content">
                         <div>
-                            <!--Bachelor of Technology (B.Tech.)-->
-                            <p>Single‑click deployment hub: builds, versions, bundles & uploads Unity targets (WebGL / Desktop / Mobile) to FTP / SFTP / SSH endpoints with checksum validation and auto‑generated release notes. Roadmap: cloud drivers (AWS / GCP / Azure) + phased & scheduled rollouts.</p>
+                            <p>Single‑click deployment build & uploads to server distribution using FTP or SCP (over SSH).</p>
                         </div>
                     </div>
                 </div>
@@ -156,13 +155,12 @@
             <li class="timeline-item">
                 <div class="icon"><div><span class="lnr lnr-cloud-sync"></span><h3 class="mt-2 ml-4">uDeploy (PATCH pipeline)</h3></div></div>
                 <div class="timeline-drescription animation-chain overflow-hidden" data-animation='fadeInRight'>
-                    <h4>one click to patch & ship for <a href="https://assetstore.unity.com/packages/tools/utilities/patch-updating-system-plus-46639">PATCH</a> launcher</h4>
+                    <h4>one click to patch & ship</h4>
                     <div class="date">Nov 2025</div>  
                 </div>                  
                     <div class="timeline-content">
                         <div>
-                            <!--Bachelor of Technology (B.Tech.)-->
-                            <p>Post‑build chain integrating the third‑party PATCH Launcher: generates binary diffs, computes optimal patch routes, uploads manifests + payloads (game + self‑updating launcher) over CDN/FTP/SFTP, and enables atomic rollback. Includes integrity hashing & telemetry hook points.</p>
+                            <p>Post‑build chain integrating the third‑party <a href="https://assetstore.unity.com/packages/tools/utilities/patch-updating-system-plus-46639">PATCH launcher</a>: generates binary diffs routes, computes optimal patch routes, uploads manifests + payloads. Easy to setup pipeline for game or launcher self updates. Uploads to server using FTP or SCP (over ssh). Enables atomic rollback by cleaning up server storage and preparing launcher to restore the game. And the most wanted feature a per/dev launcher compatibility aimed for playtest driven game-development.</p>
                         </div>
                     </div>
                 </div>
@@ -175,7 +173,7 @@
                 </div>                  
                     <div class="timeline-content">
                         <div>
-                            <p>Inline Git control: per‑asset & scene hierarchy diffs + serialized Inspector property change tracking using git diff parsing; stage / commit / branch / revert without context switching. Planned: one‑click Inspector property undo + time‑travel previews to avoid “lost scene” moments.</p>
+                            <p>Inline Git control: per‑asset & scene hierarchy diffs + serialized Inspector property change tracking using git diff parsing; stage / commit / branch / revert without context switching. one‑click Rollback in any Inspector property undo + time‑travel previews. never feel lost in minor tweaks again.</p>
                         </div>
                     </div>
                 </div>
@@ -183,12 +181,12 @@
             <li class="timeline-item" id="udungeon-description">
                 <div class="icon"><div><span class="lnr lnr-layers"></span><h3 class="mt-2 ml-4">uDungeon</h3></div></div>
                 <div class="timeline-drescription animation-chain overflow-hidden" data-animation='fadeInLeft'>
-                    <h4>S Tier Procedural Generator</h4>
+                    <h4>An S Tier Procedural Generator</h4>
                     <div class="date">Mar 2026</div>  
                 </div>                  
                     <div class="timeline-content">
                         <div>
-                            <p>Runtime map renderer for shunDungeon: consumes exported JSON + seed to expand a multidimensional byte matrix into instanced prefabs (terrain, portals, elevators, puzzles, loot) across up to 256 entity archetypes. Supports merging authored rooms, directional spawn scans & infinite reproducible variants.</p>
+                            <p>Runtime map renderer based on the shunDungeon generator: consumes exported JSON + seed to expand a multidimensional byte matrix into instanced prefabs (terrain, portals, elevators, puzzles, loot) across up to 256 entity archetypes. Supports merging authored pre-designed rooms for robust puzzles, directional spawn scans & infinite reproducible variants.</p>
                         </div>
                     </div>
                 </div>
@@ -196,12 +194,12 @@
             <li class="timeline-item" id="ually-description">
                 <div class="icon"><div><span class="lnr lnr-magic-wand"></span><h3 class="mt-2 ml-4">uAlly</h3></div></div>
                 <div class="timeline-drescription animation-chain overflow-hidden" data-animation='fadeInLeft'>
-                    <h4>LLM integrated with MCP inside unity</h4>
+                    <h4>LLM partner inside your game engine</h4>
                     <div class="date">Mar 2026</div>  
                 </div>                  
                     <div class="timeline-content">
                         <div>
-                            <p>MCP‑backed LLM co‑pilot: context‑aware chat (open scene, selected objects, components), script & editor tool scaffolding, asset naming, log triage and refactor suggestions. Extensible function registry for custom runtime commands; provider‑agnostic layer + offline cache on roadmap.</p>
+                            <p>MCP‑backed LLM co‑pilot: context‑aware chat (open scene, selected objects, components), script & editor tool scaffolding, asset naming, log triage and refactor suggestions. Extensible function registry for custom runtime commands; compatible with major models out there , chatgpt, claude, grok & gemini.</p>
                         </div>
                     </div>
                 </div>
@@ -209,12 +207,12 @@
             <li class="timeline-item" id="ubets-description">
                 <div class="icon"><div><span class="lnr lnr-dice"></span><h3 class="mt-2 ml-4">uBets</h3></div></div>
                 <div class="timeline-drescription animation-chain overflow-hidden" data-animation='fadeInLeft'>
-                    <h4>Blockchain bet api inside unity </h4>
+                    <h4>Easy to use Blockchain bet api</h4>
                     <div class="date">Jun 2027</div>  
                 </div>                  
                     <div class="timeline-content">
                         <div>
-                            <p>On‑chain wagering SDK: create, sign, submit & settle bets from gameplay with verifiable odds math and escrow / result validation. Markets auto‑listed to partner platforms (e.g. bitcoin-betting.com) for liquidity. Wallet abstraction, oracle feeds & audit trail export supported / expanding.</p>
+                            <p>On‑chain wagering SDK: create, sign, submit & settle bets from gameplay with auto odds generation based on your player winnings/losses math. Markets auto‑listed to provider platforms (e.g. bitcoin-betting.com) for improved liquidity. Wallet abstraction and easy in-game integration</p>
                         </div>
                     </div>
                 </div>
@@ -384,7 +382,7 @@
                 <!-- Company Footer -->
                 <div class="row mt-5 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
                     <div class="col-md-6">
-                        <h4 style="color: white; font-size: 1.1em; margin-bottom: 1rem;">Upcoming Products</h4>
+                        <h4 style="color: white; font-size: 1.1em; margin-bottom: 1rem; letter-spacing: 1.3px;">Upcoming Products</h4>
                         <ul style="list-style: none; padding: 0; line-height: 1.8;">
                             <li><a href="#uenv-description" style="color: #ccc; text-decoration: none;">u.env</a></li>
                             <li><a href="#udeploy-description" style="color: #ccc; text-decoration: none;">uDeploy</a></li>
@@ -395,7 +393,7 @@
                         </ul>
                     </div>
                     <div class="col-md-3">
-                        <h4 style="color: white; font-size: 1.1em; margin-bottom: 1rem;">Resources</h4>
+                        <h4 style="color: white; font-size: 1.1em; margin-bottom: 1rem; letter-spacing: 1.3px;">Resources</h4>
                         <ul style="list-style: none; padding: 0; line-height: 1.8;">
                             <li><a href="#experience-education" style="color: #ccc; text-decoration: none;">Our Roadmap</a></li>
                             <li><a href="#skills-knowledge" style="color: #ccc; text-decoration: none;">What We Offer</a></li>
@@ -403,10 +401,9 @@
                         </ul>
                     </div>
                     <div class="col-md-3">
-                        <h4 style="color: white; font-size: 1.1em; margin-bottom: 1rem;">Company</h4>
+                        <h4 style="color: white; font-size: 1.1em; margin-bottom: 1rem; letter-spacing: 1.3px;">Company</h4>
                         <ul style="list-style: none; padding: 0; line-height: 1.8;">
                             <li><a href="#about-me" style="color: #ccc; text-decoration: none;">About</a></li>
-                            <li><a href="#contact" style="color: #ccc; text-decoration: none;">Contact</a></li>
                             <li style="color: #666;">Privacy Policy (Coming Soon)</li>
                             <li style="color: #666;">Terms of Service (Coming Soon)</li>
                         </ul>
