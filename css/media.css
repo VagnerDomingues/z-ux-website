@@ -633,7 +633,7 @@ section.no-padding-top {
 }
 
 .sticky-margin-30vh{
-    height: 15vh;
+    height: 15svh;
     left: 0;
     position: static;
     float: left;
@@ -650,7 +650,7 @@ section.section-profile{
     position: relative;
     margin-bottom: 60px;
     z-index: 9;
-    height: 85vh;
+    height: 85svh;
     padding: 0;
     margin: 0;
     pointer-events: none;
@@ -2676,7 +2676,7 @@ section.section-hero svg.hero-triangles>.gray-triangle {
         display: none!important;
     }
     section.section-about-me .details{
-        padding: 20px;
+        padding: 30px;
     }
     section.section-hero .btm>.left{
         margin-left: 18.5%;
@@ -2695,7 +2695,7 @@ section.section-hero svg.hero-triangles>.gray-triangle {
     }
     section.section-profile .titles {
         margin-bottom: 150px;
-        font-size: 1.3em;
+        font-size: 1.1em;
         margin: 0;
         width: 100%;
         margin-top: 5px;
