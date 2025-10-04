@@ -938,8 +938,8 @@ section.section-about-me {
     padding-top: 160px;
     overflow-y: auto;
     overflow-x: hidden;
-    height: 100vh;
-    margin-bottom: -100vh;
+    height: 100svh;
+    margin-bottom: -100svh;
 }
 
 section.section-about-me svg.triangle {
