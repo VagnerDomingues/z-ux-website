@@ -970,7 +970,7 @@ section.section-about-me svg.triangle.tiny, .nav-triangle.tiny {
     opacity: 1;
 }
 section.section-about-me .details {
-    padding: 36px;
+    padding: 48px;
     width: 100%;
     display: -webkit-flex;
     display: flex;
@@ -2550,10 +2550,20 @@ section.section-contact p {
         letter-spacing: -2px;
     }
 }
+
 @media only screen and (max-width:1400px){
+
+    #about-me > div.blue-rectangle > svg.hero-triangles{
+        display: block!important;
+    }
+
+    .hidden-tablet{
+        display: none!important;
+    }
+
     section.section-hero svg.hero-triangles>.primary-triangle {
-    transform: matrix(2, 0, 0, 1, -130, 198)
-}
+        transform: matrix(2, 0, 0, 1, -130, 198)
+    }
 
 section.section-hero svg.hero-triangles>.gray-triangle {
     fill: #22405f;
@@ -2720,6 +2730,7 @@ section.section-hero svg.hero-triangles>.gray-triangle {
     }
     section.section-contact>.left .contact-main .contact-info{
         gap:30px;
+        margin-bottom:60px;
     }
 }
 
@@ -2926,3 +2937,25 @@ section.section-hero svg.hero-triangles>.gray-triangle {
         margin: 0 !important
     }
 }
+
+
+
+
+    #about-me > div.blue-rectangle > svg.hero-triangles{
+        display: none;;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #about-me > div.blue-rectangle > svg.hero-triangles>.gray-triangle {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        bottom: 0;
+        
+        fill: #376b94;
+        transform: matrix(4, 0, 0, 2, -788, -394);
+        opacity: 1;
+    }
