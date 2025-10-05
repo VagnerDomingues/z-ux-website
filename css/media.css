@@ -2982,3 +2982,13 @@ section.section-profile h1 {
     margin-top: 1.5%!important;
     }
 }
+
+
+#footer a:link, a:visited{
+    color: #cf801f;
+}
+
+#footer a:link:hover, a:visited:hover{
+    color: #ffc107;
+
+}
