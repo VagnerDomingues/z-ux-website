@@ -2959,3 +2959,26 @@ section.section-hero svg.hero-triangles>.gray-triangle {
         transform: matrix(4, 0, 0, 2, -788, -394);
         opacity: 1;
     }
+
+    
+@media only screen and (min-height:480px) and (max-height: 620px) {
+section.section-profile h1 {    
+    font-size: 1.6em!important;
+    margin-top: 3%!important;
+    }
+}
+
+
+@media only screen and  (min-height:381px) and (max-height: 480px) {
+section.section-profile h1 {    
+        font-size: 1.4em !important;
+        margin-top: 2% !important;
+    }
+}
+
+@media only screen and (max-height: 380px) {
+section.section-profile h1 {    
+    font-size: 1.25em!important;
+    margin-top: 1.5%!important;
+    }
+}
